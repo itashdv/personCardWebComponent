@@ -1,0 +1,102 @@
+/* resetting default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* styling the scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: orange;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid orange;
+}
+/* main wrapper box */
+.wrapper {
+  width: 180px;
+  height: 280px;
+  margin: 10px auto;
+  perspective: 1000px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: width 0.5s linear;
+}
+.contentSection {
+  position: relative;
+  height: 80%;
+  transition: all 0.5s linear;
+  transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+}
+article  {
+  width: inherit;
+  height: inherit;
+  overflow-y: scroll;
+  padding: 16px;
+}
+.profileImg {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.2s linear;
+}
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.front {
+  overflow: hidden;
+}
+.back {
+  transform: rotateX(180deg);
+}
+.controlSection {
+  border-top: 1px solid #c3c3c3;
+  position: relative;
+  height: 20%;
+}
+.nameLastname {
+  margin: 4px 0;
+  text-align: center;
+  font-size: 18px;
+}
+.readMoreBtn {
+  text-align: center;
+  color: blue;
+  cursor: pointer;
+}
+.closeBtn {
+  text-align: center;
+  color: blue;
+  cursor: pointer;
+  display: none;
+}
+
+
+/* /
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/ */

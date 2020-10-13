@@ -7,7 +7,7 @@ personCardTemplate.innerHTML = `
 			<div class="front">
 				<img
 					class="profileImg"
-					src="https://phareps.org/wp-content/uploads/2020/09/GeraldineDarpoux.png"
+					src=""
 				/>
 			</div>
 			<div class="back">
@@ -39,6 +39,10 @@ class PersonCard extends HTMLElement {
 		const readMoreBtn = this.shadowRoot.querySelector('.readMoreBtn');
 		const closeBtn = this.shadowRoot.querySelector('.closeBtn');
 		const innerViewPortWidth = window.innerWidth;
+		if (this.hasAttribute('image')) {
+			const imgSrc = this.getAttribute('image');
+			profileImg.setAttribute('src', imgSrc);
+		}
 		readMoreBtn.addEventListener('click', () => {
 			profileImg.setAttribute('style', 'opacity: 0');
 			contentSection.setAttribute('style', 'transform: rotateX(180deg)');

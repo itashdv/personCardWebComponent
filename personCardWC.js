@@ -61,36 +61,6 @@ class PersonCard extends HTMLElement {
 			closeBtn.setAttribute('style', 'display: none');
 			readMoreBtn.setAttribute('style', 'display: block');
 		});
-
-		// const wrapper = this.shadowRoot.getElementById('wrapper');
-		// const personCard = this.shadowRoot.getElementById('personCard');
-		// // const front = this.shadowRoot.getElementById('front');
-		// const readMore = this.shadowRoot.getElementById('readMore');
-		// // const back = this.shadowRoot.getElementById('back');
-		// const closeBtn = this.shadowRoot.getElementById('closeBtn');
-		// const profileImg = this.shadowRoot.getElementById('profileImg');
-		// readMore.addEventListener('click', () => {
-		// 	profileImg.setAttribute('style', 'opacity: 0');
-		// 	personCard.setAttribute('style', 'transform: rotateX(180deg)');
-		// 	personCard.setAttribute('style', '-webkit-transform: rotateX(180deg)');
-		// 	const intViewportWidth = window.innerWidth;
-		// 	console.log(intViewportWidth);
-		// 	if (intViewportWidth > 520) {
-		// 		console.log('More than 520px');
-		// 		wrapper.setAttribute('style', 'width: 500px');
-		// 	} else {
-		// 		console.log('Less than 520px');
-		// 		wrapper.setAttribute('style', 'width: 300px');
-		// 	}
-		// 	// console.log(window.innerWidth);
-		// 	// wrapper.setAttribute('style', 'width: 500px');
-		// });
-		// closeBtn.addEventListener('click', () => {
-		// 	profileImg.setAttribute('style', 'opacity: 1');
-		// 	personCard.setAttribute('style', 'transform: rotateX(0deg)');
-		// 	wrapper.setAttribute('style', 'width: 174px');
-		// 	wrapper.setAttribute('style', 'height: 300px');
-		// });
 	}
 }
 
